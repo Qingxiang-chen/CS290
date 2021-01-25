@@ -1,0 +1,79 @@
+<html>
+<head>
+
+<style type="text/css">
+
+body {background-image:url(background_blue.jpg);background-repeat:no-repeat; background-position:center right}
+h1 {background-color:white} 
+h2 {background-color: transparent}
+h3 {background-color: green}
+h4 {background-color: yellow}
+h5.hidden{visibility: hidden;}
+p {background-color: rgb(134, 123, 134)}
+
+
+img.big {height: 160px;}
+img.small {height: 30px;float: right;border:1px dotted black;
+           margin:0px 0px 15px 20px;}
+img.z-index { position:absolute;left:0px;top:0px;z-index:-1}
+
+
+div.test{white-space:nowrap; 
+         width:12em; 
+         overflow:hidden; 
+         border:1px solid #000000;
+        }
+
+
+div.inheritance {
+        color: deeppink;
+        font-size: 40px;
+        background: aqua;
+        width: 250px;
+        height: 250px;
+       }
+
+
+div.left {float: left}
+div.right {float: right}
+div.clear { clear: both;}
+
+</style>
+
+</head>
+
+<body>
+
+<h1> assignment 3 more html</h1>
+<h3> overflow <h3>
+<p> "text-overflow:ellipsis" ：</p>
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+<p> "text-overflow:clip"：</p>
+<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+<h2>imagine test </h2>
+<img class="big" src="iron man.jpg" />
+<br />
+<img class="small" src="iron man.jpg" />
+
+<h4>z-index</h4>
+<img class="z-index" src="background_blue.jpg" />
+<p>this is paragraph, and img will be in back of paragraph becasue z-index is -1 </p>
+
+<h5>this is visable heading</h5>
+<h5 class="hidden">this is invisiable heading</h5>
+<p>there is one invisiable heading up<p>
+
+
+<h6>inheritance<h6>
+   <div class="inheritance">
+        this  paragraph test inheritance
+   </div>
+
+<h7>clear<h7>
+    <div class="left"> left </div>
+    <div class="right"> right </div>
+    <div class="clear"> <div>
+
+</body>
+</html>
